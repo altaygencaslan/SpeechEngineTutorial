@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/gradient_background"
+        tools:context=".MainActivity">
+
+
+    <EditText android:id="@+id/edtSpeechThis"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_marginStart="75dp"
+              android:layout_marginEnd="75dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="50dp"
+              android:textColor="@color/white"
+              android:background="@drawable/edittext"/>
+
+    <ImageButton android:id="@+id/btnSpeechThis"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@null"
+                 android:layout_alignTop="@id/edtSpeechThis"
+                 android:layout_toRightOf="@id/edtSpeechThis"
+                 android:layout_marginLeft="-70dp"
+                 android:src="@drawable/ic_play_circle_outline_black_24dp"
+                 android:onClick="btnSpeechThis_Click"/>
+
+    <TextView android:id="@+id/txtSpeechInput"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@id/edtSpeechThis"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/white"
+              android:textSize="26dp"
+              android:textStyle="normal"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginBottom="60dp"
+                  android:orientation="vertical">
+
+        <ImageButton android:id="@+id/btnSpeak"
+                     android:layout_gravity="center"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/circle"
+                     android:src="@drawable/ic_mic_black_24dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/tap_on_mic"
+                  android:textColor="@color/white"
+                  android:textSize="15dp"
+                  android:textStyle="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
